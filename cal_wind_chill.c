@@ -3,7 +3,7 @@
 #include<math.h>
 
 int main(){
-        int t,v;
+    int t,v;
     printf("enter the value of t,v");
     scanf("%d,%d",&t,&v);
     float wcf;

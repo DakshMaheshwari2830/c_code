@@ -1,3 +1,4 @@
+
 int main(){
     char ch;
     printf("Enter the character: ");
