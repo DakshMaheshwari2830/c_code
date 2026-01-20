@@ -1,4 +1,4 @@
-STRINGS
+//STRINGS
 #include<stdio.h>
 void printString(char arr[]);
 int main(){
