@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void insertionsort(int arr[], int n) {
+    int i, j, key;
+for(i = 1; i < n; i++) {
+        key = arr[i];
+        for(j = i - 1; j >= 0 && arr[j] > key; j--) {
+            arr[j + 1] = arr[j];
+        }
+        arr[j + 1] = key;
+    }
+}
+
+int main() {
+    int arr[] = {2, 4, 5, 8, 1, 7};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    insertionsort(arr, n);
+    printf("Sorted array:\n");
+    for(int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    return 0;
+}
